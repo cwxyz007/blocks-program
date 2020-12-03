@@ -1,9 +1,0 @@
-{
-  "typescript.tsdk": "node_modules\\typescript\\lib",
-  "json.schemas": [
-    {
-      "fileMatch": ["typedoc.json"],
-      "url": "http://json.schemastore.org/typedoc"
-    }
-  ]
-}

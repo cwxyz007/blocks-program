@@ -32,9 +32,9 @@ export class EventEmitter<T extends IEventsMap = IEventsMap> {
   }
 
   emit<K extends keyof T>(type: K, ...args: Parameters<T[K]>) {
-    const evts = this.events(type as string)
+    const events = this.events(type as string)
 
-    for (const func of evts) {
+    for (const func of events) {
       func(...args)
     }
   }
